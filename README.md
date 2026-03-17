@@ -110,10 +110,8 @@ Connection con = DriverManager.getConnection(
 ## 📸 Project Output
 
 ### 🔐 Login Screen
-![Login UI](ChatGPT Image Mar 17, 2026, 08_16_55 PM.png)
+![login Page](ChatGPT Image Mar 17, 2026, 08_16_55 PM.png)
 
-### 📊 Dashboard
-![Dashboard](./screenshots/dashboard.png)
 
 ---
 
