@@ -1,73 +1,142 @@
-# Hotel-Management-System
-The project is implemented using Swing GUI widget toolkit and MYSQL database. There are Cloud-based hotel software saves time spent on manual updates
-The System provides the access:-
-(i) Add room details, easily update, delete records & view all records.
-(ii) Customer Check in insert all record including room details,
-(iii) Customer Check out and Calculate bill automatically.
-(iv) Auto Generate Bill when Customer Checkout.
-(v) Store Bill Details in future see and print this bill.
-(vi)Pay-as-you-go service, upgrade easily, quick installation
-Technology Used:- JAVA, AWT & Swing
-Tools Used:- Apache Net-Beans for Coding
-JDBC for database Connectivity
-Database:- MYSQL for Storing Transaction history
+# 🏨 Hotel Management System (Java)
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![IDE](https://img.shields.io/badge/IDE-Eclipse-blue?style=for-the-badge)
+![Database](https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge)
 
+---
 
-# Easy to Installed using executable file(.exe)
+## 📌 Project Overview
+The **Hotel Management System** is a desktop-based application developed using **Java (Swing/JavaFX)** and **MySQL**.  
+It helps hotel staff manage daily operations like customer details, room booking, employee management, and more.
 
-![Screenshot 2022-07-30 170902](https://user-images.githubusercontent.com/84500245/182027633-1c16938c-4697-4a5c-a562-b8a0e13c4a01.jpg)
+---
 
-# Easy to open applicatin and use 
-# Loading Page
-![Screenshot 2022-07-30 170235](https://user-images.githubusercontent.com/84500245/182027683-206a942b-4806-44c4-acae-9680d33a4c6f.jpg)
+## 🚀 Features
 
-# Login page
+- 🔐 Login System
+- 🧑 Add Customer Details
+- 🏨 Room Management
+- 👨‍💼 Employee Management
+- 🚗 Driver Management
+- 📊 Dashboard Overview
+- 🔍 Search Rooms
+- 🧾 Reception Panel
 
-![Screenshot 2022-07-30 170323](https://user-images.githubusercontent.com/84500245/182027846-295b969f-c03d-4734-b4d0-183ef93bc18c.jpg)
+---
 
-# Registration Page
+## 🛠️ Technologies Used
 
-![Screenshot 2022-07-30 171125](https://user-images.githubusercontent.com/84500245/182027865-2019f37c-8fe1-447e-8588-1be497bfa40c.jpg)
+- ☕ Java (Core Java, Swing/JavaFX)
+- 🛢️ MySQL Database
+- 🧰 Eclipse IDE
+- 🔌 JDBC (Java Database Connectivity)
 
-# Forgot Passwprd Page
+---
 
-![Screenshot 2022-07-30 171206](https://user-images.githubusercontent.com/84500245/182027877-d9a9cae5-00f4-48a2-9371-6b9aeaeab1cf.jpg)
+## 📂 Full Project Structure
 
-# Admin Page
+```
+Hotel-Management-System/
+│
+├── src/
+│   └── hotel/management/system/
+│       ├── AddCustomer.java
+│       ├── AddDriver.java
+│       ├── AddEmployee.java
+│       ├── AddRooms.java
+│       ├── Dashboard.java
+│       ├── Login.java
+│       ├── Reception.java
+│       ├── Room.java
+│       ├── SearchRoom.java
+│       ├── Conn.java              # Database connection class
+│       └── Main.java              # Entry point
+│
+├── lib/                           # External libraries (JAR files)
+│   └── mysql-connector-java.jar
+│
+├── screenshots/                   # Project output images
+│   ├── login.png
+│   └── dashboard.png
+│
+├── database/                      # SQL files (if any)
+│   └── hotel_management.sql
+│
+├── pom.xml                        # Maven config (if used)
+├── .classpath                     # Eclipse config
+├── .project                       # Eclipse config
+├── README.md                      # Project documentation
+└── .gitignore                     # Ignore unnecessary files
+```
 
-![Screenshot 2022-07-31 182302](https://user-images.githubusercontent.com/84500245/182027881-fc9c487f-6796-412f-9b2e-86ad38ef034a.jpg)
+---
 
-# Home Page
+## ▶️ How to Run the Project
 
-![Screenshot 2022-07-31 182337](https://user-images.githubusercontent.com/84500245/182027885-7abd428c-5fe0-4b29-bb61-9ceacf5885c9.jpg)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/hotel-management-system.git
+```
 
-# Room Manage 
+### 2️⃣ Open in Eclipse
+- Go to **File → Import**
+- Select **Existing Projects into Workspace**
+- Choose the project folder
 
-![Screenshot 2022-07-31 182357](https://user-images.githubusercontent.com/84500245/182027900-e51e581e-8123-47c0-98b4-ba3d75c32fa7.jpg)
+### 3️⃣ Setup Database
+- Install MySQL
+- Create a database (e.g., `hotel_management`)
+- Import SQL file (if provided)
 
-# Customer Checkin 
+### 4️⃣ Configure Database Connection
 
-![Screenshot 2022-07-31 182419](https://user-images.githubusercontent.com/84500245/182027907-f1664da5-7e8d-45a5-9d06-414a0822d611.jpg)
+Update your JDBC code:
 
-# Customer Checkout
+```java
+Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/hotel_management",
+    "username",
+    "password"
+);
+```
 
-![Screenshot 2022-07-31 182440](https://user-images.githubusercontent.com/84500245/182027915-8ea8e303-5292-4605-9411-dadf137cbf20.jpg)
+### 5️⃣ Run the Project
+- Open `Main.java`
+- Right click → **Run As → Java Application**
 
-# Bill Calculate
+---
 
-![Screenshot 2022-07-31 182517](https://user-images.githubusercontent.com/84500245/182027918-0c6d1d68-4aac-47cf-bd0f-ab04a4e83ef3.jpg)
+## 📸 Project Output
 
+### 🔐 Login Screen
+![Login UI](./screenshots/login.png)
 
-# Print Bill
+### 📊 Dashboard
+![Dashboard](./screenshots/dashboard.png)
 
-![Screenshot 2022-07-31 182543](https://user-images.githubusercontent.com/84500245/182027924-561d42ac-83c5-4789-ac04-9da9ababe643.jpg)
-![Screenshot 2022-07-31 182758](https://user-images.githubusercontent.com/84500245/182027952-b07525c4-a34c-4d87-baa2-3cfb29132014.jpg)
+---
 
+## ❗ Common Issues
 
-# Logout
-![Screenshot 2022-07-31 182713](https://user-images.githubusercontent.com/84500245/182027928-d1b32712-853d-45e9-ab94-82640fc56736.jpg)
+- ❌ JDBC Driver Missing  
+  → Add MySQL connector `.jar` in **Build Path**
 
+- ❌ Database Not Connected  
+  → Check username, password, and DB name
 
+- ❌ JavaFX Error  
+  → Add VM arguments if using JavaFX
 
-![Screenshot_20241107-123605_1](https://github.com/user-attachments/assets/e77b7eed-8432-4918-90be-2b74abc730c0)
+---
+
+## 🙌 Author
+
+**Pratik Kumbhar**  
+💻 Java Developer | Web Developer
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
